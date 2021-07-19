@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="3dp"
+    android:elevation="2dp"
+    android:layout_margin="3dp"
+    >
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/transactIdTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="2sp"
+            android:textSize="15sp"
+            android:layout_weight="5"
+            android:gravity="center_horizontal"
+
+
+            />
+
+        <TextView
+            android:id="@+id/senderNameTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="2sp"
+            android:textSize="15sp"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+
+            />
+        <TextView
+            android:id="@+id/recipientNameTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="2sp"
+            android:textSize="15sp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+
+            />
+
+        <TextView
+            android:id="@+id/amountTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="2sp"
+            android:textSize="15sp"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+
+            />
+
+        <TextView
+            android:id="@+id/timeTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:padding="2sp"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+</TableLayout>
+</androidx.cardview.widget.CardView>

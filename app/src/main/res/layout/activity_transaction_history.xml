@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transaction_History">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp">
+
+
+
+    <!-- Table Heading -->
+
+    <TableRow
+        android:background="@color/purple_200">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Transaction Id"
+            android:textColor="@android:color/white"
+            android:padding="2sp"
+            android:textSize="15sp"
+            android:layout_weight="5"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sender Name"
+            android:textColor="@android:color/white"
+            android:padding="2sp"
+            android:textSize="15sp"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Recipient Name"
+            android:textColor="@android:color/white"
+
+            android:padding="2sp"
+            android:textSize="15sp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textColor="@android:color/white"
+            android:padding="2sp"
+            android:textSize="15sp"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:padding="2sp"
+            android:text="Time"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transactionRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </TableLayout>
+
+</RelativeLayout>
